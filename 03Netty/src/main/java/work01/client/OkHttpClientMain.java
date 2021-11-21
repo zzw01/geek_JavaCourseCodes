@@ -1,4 +1,4 @@
-package http.work01.client;
+package work01.client;
 
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
