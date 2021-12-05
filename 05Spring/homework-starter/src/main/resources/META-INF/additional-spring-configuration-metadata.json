@@ -1,0 +1,89 @@
+{
+  "groups": [
+    {
+      "name": "spring.homework.datasource",
+      "type": "com.example.homeworkstarter.HomeWorkAutoConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.homework.student.name",
+      "type": "java.lang.String",
+      "description": "student's name.",
+      "defaultValue": "Zhang"
+    },
+    {
+      "name": "spring.homework.student.age",
+      "type": "java.lang.Integer",
+      "description": "student's age.",
+      "defaultValue": 18
+    },
+    {
+      "name": "spring.homework.xclass.name",
+      "type": "java.lang.String",
+      "description": "class's name.",
+      "defaultValue": "一班"
+    },
+    {
+      "name": "spring.homework.xclass.student.name",
+      "type": "java.lang.String",
+      "description": "class's student's name",
+      "sourceType": "com.example.homeworkstarter.pojo.Student"
+    },
+    {
+      "name": "spring.shardingsphere.xclass",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shardingsphere.spring.boot.prop.SpringBootPropertiesConfiguration",
+      "description": "Customize shardingsphere properties."
+    },
+    {
+      "name": "spring.shardingsphere.mode.type",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shardingsphere.infra.yaml.config.pojo.mode.YamlModeConfiguration"
+    },
+    {
+      "name": "spring.shardingsphere.mode.repository.type",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shardingsphere.infra.yaml.config.pojo.mode.YamlPersistRepositoryConfiguration"
+    },
+    {
+      "name": "spring.shardingsphere.mode.repository.props",
+      "type": "java.util.Properties",
+      "sourceType": "org.apache.shardingsphere.infra.yaml.config.pojo.mode.YamlPersistRepositoryConfiguration"
+    },
+    {
+      "name": "spring.shardingsphere.mode.overwrite",
+      "type": "java.lang.Boolean",
+      "sourceType": "org.apache.shardingsphere.infra.yaml.config.pojo.mode.YamlModeConfiguration"
+    },
+    {
+      "name": "spring.shardingsphere.datasource.names",
+      "type": "java.lang.String",
+      "sourceType": "org.apache.shardingsphere.spring.boot.ShardingSphereAutoConfiguration"
+    },
+    {
+      "name": "spring.shardingsphere.datasource",
+      "type": "java.util.Map<java.lang.String,java.util.Map<java.lang.String,java.lang.Object>>",
+      "sourceType": "org.apache.shardingsphere.spring.boot.util.DataSourceUtil"
+    },
+    {
+      "name": "spring.shardingsphere.schema.name",
+      "type": "org.apache.shardingsphere.spring.boot.ShardingSphereAutoConfiguration"
+    }
+  ],
+  "hints": [
+    {
+      "name": "spring.shardingsphere.datasource.keys",
+      "values": []
+    },
+    {
+      "name": "spring.shardingsphere.datasource.values",
+      "values": [],
+      "providers": [
+        {
+          "name": "any"
+        }
+      ]
+    }
+  ]
+}
